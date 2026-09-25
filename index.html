@@ -7,14 +7,14 @@
   <title>Delta — One-shot literature search</title>
   <style>
     :root {
-      --paper: #f4f5f2;
-      --paper-deep: #dfe2dd;
+      --paper: #f1f3f6;
+      --paper-deep: #dfe4ea;
       --ink: #090a0b;
       --muted: #646a69;
       --line: rgba(9, 10, 11, 0.17);
-      --green: #b8ff00;
+      --violet: #b800ff;
       --blue: #2f63ff;
-      --serif: Georgia, 'Times New Roman', serif;
+      --serif: Verdana, Geneva, sans-serif;
       --sans: 'Avenir Next', Avenir, 'Helvetica Neue', sans-serif;
     }
 
@@ -56,11 +56,11 @@
       width: 28px;
       height: 28px;
       color: var(--ink);
-      background: var(--green);
+      background: var(--violet);
       border-radius: 2px;
       font-family: var(--serif);
       font-size: 19px;
-      font-weight: 400;
+      font-weight: 700;
       line-height: 1;
     }
     .nav { display: flex; gap: 30px; align-items: center; color: var(--muted); font-size: 13px; }
@@ -68,14 +68,14 @@
     .nav-cta {
       padding: 9px 15px;
       color: var(--ink) !important;
-      background: var(--green);
+      background: var(--violet);
       border-radius: 2px;
     }
 
     .hero {
       max-width: 1440px;
       margin: 0 auto;
-      padding: clamp(64px, 10vw, 142px) 5vw 100px;
+      padding: clamp(34px, calc(10vw - 30px), 112px) 5vw 100px;
       display: grid;
       grid-template-columns: minmax(0, 1.04fr) minmax(420px, .96fr);
       gap: clamp(55px, 9vw, 150px);
@@ -85,7 +85,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      color: var(--green);
+      color: var(--violet);
       font-size: 11px;
       font-weight: 800;
       letter-spacing: .16em;
@@ -97,9 +97,9 @@
       margin: 22px 0 26px;
       font-family: var(--serif);
       font-size: clamp(54px, 7.1vw, 108px);
-      font-weight: 400;
+      font-weight: 800;
       letter-spacing: -.055em;
-      line-height: .9;
+      line-height: 1.02;
     }
     h1 em { color: var(--blue); font-style: italic; }
     .hero-copy { max-width: 490px; color: var(--muted); font-size: 17px; }
@@ -111,7 +111,7 @@
       padding: 27px;
       background: #ffffff;
       border: 1px solid var(--ink);
-      box-shadow: 13px 13px 0 var(--green);
+      box-shadow: 13px 13px 0 var(--violet);
     }
     .research-card::before { content: '01'; position: absolute; top: -14px; right: 22px; padding: 3px 8px; color: #ffffff; background: var(--blue); font: 12px var(--sans); letter-spacing: .1em; }
     .card-top { display: flex; justify-content: space-between; margin-bottom: 26px; font-size: 11px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
@@ -121,7 +121,7 @@
     .question-wrap { display: flex; align-items: flex-end; gap: 12px; padding: 15px 0 12px; border-bottom: 1px solid var(--ink); }
     .question-wrap input { width: 100%; padding: 0; color: var(--ink); background: transparent; border: 0; outline: 0; font-family: var(--serif); font-size: 20px; }
     .question-wrap input::placeholder { color: #aaa59a; }
-    .submit-button { flex: 0 0 auto; display: grid; place-items: center; width: 42px; height: 42px; color: var(--ink); background: var(--green); border: 0; border-radius: 2px; font-size: 21px; transition: transform .2s ease, background .2s ease; }
+    .submit-button { flex: 0 0 auto; display: grid; place-items: center; width: 42px; height: 42px; color: var(--ink); background: var(--violet); border: 0; border-radius: 2px; font-size: 21px; transition: transform .2s ease, background .2s ease; }
     .submit-button:hover { background: var(--blue); color: #ffffff; transform: translate(3px, -3px); }
     .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
     .example { padding: 6px 9px; color: var(--muted); background: transparent; border: 1px solid var(--line); font-size: 11px; }
@@ -141,8 +141,8 @@
     .source-number { color: var(--blue); font-family: var(--serif); font-size: 16px; }
 
     .ticker { overflow: hidden; color: var(--paper); background: var(--ink); border-block: 1px solid var(--ink); }
-    .ticker-track { display: flex; width: max-content; gap: 34px; padding: 13px 0; animation: ticker 26s linear infinite; font-family: var(--serif); font-size: 17px; font-style: italic; }
-    .ticker-track span:nth-child(2n) { color: var(--green); }
+    .ticker-track { display: flex; width: max-content; gap: 34px; padding: 30px 0; animation: ticker 26s linear infinite; font-family: var(--serif); font-size: 17px; font-style: italic; }
+    .ticker-track span:nth-child(2n) { color: var(--violet); }
 
     .how { max-width: 1440px; margin: 0 auto; padding: 110px 5vw 125px; }
     .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 54px; }
@@ -158,11 +158,11 @@
 
     .manifesto { display: grid; grid-template-columns: 1fr 1fr; background: var(--ink); color: var(--paper); }
     .manifesto-copy { padding: 100px 9vw 100px 10vw; }
-    .manifesto .section-label { color: var(--green); }
+    .manifesto .section-label { color: var(--violet); }
     .manifesto h2 { max-width: 550px; margin-top: 23px; }
     .manifesto-note { max-width: 380px; margin-top: 30px; color: rgba(244,245,242,.72); font-size: 14px; }
     .manifesto-visual { position: relative; min-height: 450px; background: var(--blue); overflow: hidden; }
-    .manifesto-visual::before { content: '“'; position: absolute; top: -80px; left: 8%; color: var(--green); font-family: var(--serif); font-size: 430px; line-height: 1; }
+    .manifesto-visual::before { content: '“'; position: absolute; top: -80px; left: 8%; color: var(--violet); font-family: var(--serif); font-size: 430px; line-height: 1; }
     .manifesto-visual::after { content: 'SEARCH ONCE\A SEE CLEARLY'; white-space: pre; position: absolute; right: 9%; bottom: 9%; color: #ffffff; font-size: 13px; font-weight: 800; letter-spacing: .2em; line-height: 2; text-align: right; }
 
     footer { display: flex; justify-content: space-between; max-width: 1440px; margin: 0 auto; padding: 24px 5vw; color: var(--muted); font-size: 11px; }
@@ -185,7 +185,7 @@
       .hero, .how { padding-inline: 6vw; }
       h1 { font-size: clamp(52px, 16vw, 82px); }
       .hero-meta { gap: 15px; }
-      .research-card { padding: 21px; box-shadow: 8px 8px 0 var(--green); }
+      .research-card { padding: 21px; box-shadow: 8px 8px 0 var(--violet); }
       .steps { grid-template-columns: 1fr; }
       .step, .step + .step { min-height: 0; padding: 22px 0 32px; border-right: 0; border-bottom: 1px solid var(--line); }
       .step h3 { margin-top: 28px; }
@@ -208,7 +208,7 @@
     <section class="hero" id="try">
       <div class="hero-content">
         <div class="eyebrow">One-shot literature search</div>
-        <h1>One question.<br>A research path, <em>in one shot.</em></h1>
+        <h1>One question.<br>A full research path. <em>One shot.</em></h1>
         <p class="hero-copy">Delta breaks a topic into the questions it needs, sequences the search, and connects each answer back to the whole argument.</p>
         <div class="hero-meta">
           <div><strong>01</strong> question in</div>
@@ -247,7 +247,7 @@
       </div>
     </section>
 
-    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>search</span><span>→</span><span>compare</span><span>→</span><span>understand</span><span>→</span><span>search</span><span>→</span><span>compare</span><span>→</span><span>understand</span><span>→</span></div></div>
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>break it down</span><span>→</span><span>sequence questions</span><span>→</span><span>search peer-reviewed sources</span><span>→</span><span>build the case</span><span>→</span><span>break it down</span><span>→</span><span>sequence questions</span><span>→</span><span>search peer-reviewed sources</span><span>→</span><span>build the case</span><span>→</span></div></div>
 
     <section class="how" id="method">
       <div class="section-heading">
